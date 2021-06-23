@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/umn_color"
+    tools:context=".Notifications">
+
+    <ImageButton
+        android:id="@+id/homebutton4"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homeimage" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="411dp"
+        android:layout_marginRight="411dp"
+        android:layout_marginBottom="731dp"
+        android:theme="@style/Theme.Schedule4U.AppBarOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/content_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--    want way to delete notification with other notifications dynamically adjusting -->
+
+    <TextView
+        android:id="@+id/notification_1"
+        android:layout_width="240dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:background="#FFCC33"
+        android:text="Don't forget to walk your dog"
+        android:textColor="#040303"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <TextView
+        android:id="@+id/notif_1_time"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:background="#FFCC33"
+        android:text="5 minutes ago"
+        android:textColor="#0C0C0C"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
+
+    <TextView
+        android:id="@+id/notification_2"
+        android:layout_width="240dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:background="#FFCC33"
+        android:text="                                                                   Don't forget to read for an hour"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notif_2_time" />
+
+    <TextView
+        android:id="@+id/notif_2_time"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="112dp"
+        android:background="#FFCC33"
+        android:text="10 minutes ago"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_1" />
+
+    <ImageButton
+        android:id="@+id/image_button_1"
+        android:layout_width="59dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="228dp"
+        android:background="#007A0019"
+        app:layout_constraintStart_toEndOf="@+id/notification_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/image_button_2"
+        android:layout_width="60dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="216dp"
+        android:background="#007A0019"
+        app:layout_constraintStart_toEndOf="@+id/notification_2"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_1"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aboutsymb" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Notifications"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homebutton4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom|end"-->
+    <!--        android:layout_margin="@dimen/fab_margin"-->
+    <!--        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

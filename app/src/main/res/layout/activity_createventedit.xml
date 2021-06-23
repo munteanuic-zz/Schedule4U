@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/umn_color">
+
+    <ImageButton
+        android:id="@+id/HOMEB3"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginRight="126dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homeimage" />
+
+    <TextView
+        android:id="@+id/TextView48"
+        android:layout_width="160dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="End Time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/startTIME"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/moreDetails"
+        android:layout_width="357dp"
+        android:layout_height="60dp"
+        android:hint="location: home"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:text="home"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImportanceLevel"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <EditText
+        android:id="@+id/startTIME"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:hint="1:00 pm-2:00pm"
+        android:imeOptions="actionDone"
+        android:inputType="date|textUri|textShortMessage|textLongMessage|textAutoCorrect|number|time"
+        android:text="1:00 pm-2:00pm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/EndTime"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImportanceLevel"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <EditText
+        android:id="@+id/TimeForTask"
+        android:layout_width="351dp"
+        android:layout_height="49dp"
+        android:hint="120 minute"
+        android:imeOptions="actionDone"
+        android:text="120 min"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddTask"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TextView43"
+        android:layout_width="160dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Edit a Task"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/AddTask"
+        android:layout_width="351dp"
+        android:layout_height="49dp"
+        android:hint="Do problem set"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:text="Do problem set"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView43"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <RadioGroup
+        android:id="@+id/ImportanceLevel"
+        android:layout_width="354dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="236dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/urgent"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Urgent"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/Important"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="Important"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/leisure"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="Leisure"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/onlyIfTime"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:text="Only If Time"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/EndTime"
+        android:layout_width="153dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="224dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/TaskDays"
+        android:layout_width="102dp"
+        android:layout_height="27dp"
+        android:ems="10"
+        android:hint="3"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moreDetails"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <TextView
+        android:id="@+id/TaskSplitInput"
+        android:layout_width="148dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="Split Task Into # of Days"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/TaskDays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Editeventsubmit"
+        android:layout_width="187dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="40dp"
+        android:text="Edit"
+        app:backgroundTint="#FFCC33"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView46"
+        android:layout_width="160dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Start Time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/startTIME"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/CompleteDay"
+        android:layout_width="351dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="03.21"
+        android:imeOptions="actionDone"
+        android:inputType="date"
+        android:text="3.01"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ImportanceLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeForTask"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TextView57"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="4dp"
+        android:text="importance(1-4)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moreDetails" />
+
+    <EditText
+        android:id="@+id/Levelofimportance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="32dp"
+        android:hint="1"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moreDetails" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

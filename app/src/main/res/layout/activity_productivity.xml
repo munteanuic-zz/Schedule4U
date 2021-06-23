@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prod_background"
+    style="@style/TextAppearance.AppCompat.Medium"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/umn_color"
+    tools:context=".Productivity">
+
+    <TextView
+        android:id="@+id/prod_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/prod_score"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/prod_aboutme"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/prod_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prod_time_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/time_spent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FDC025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/prod_home"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homeimage" />
+
+    <ImageButton
+        android:id="@+id/prod_aboutme"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/about_me"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aboutsymb" />
+
+    <TextView
+        android:id="@+id/prod_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/time1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#9AFBBE25"
+        app:layout_constraintStart_toEndOf="@+id/prod_time_spent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/prod_progress"
+        android:layout_width="264dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="256dp"
+        android:contentDescription="@string/progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/raster" />
+
+    <TextView
+        android:id="@+id/prod_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/prod_text2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prod_time_spent" />
+
+    <TextView
+        android:id="@+id/prod_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/prod_text1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prod_text1" />
+
+    <TextView
+        android:id="@+id/prod_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:text="@string/_45_50_points"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prod_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/this_week"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prod_text4" />
+
+    <ImageView
+        android:id="@+id/prod_oval3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="112dp"
+        android:contentDescription="@string/oval3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prod_oval2"
+        app:srcCompat="@drawable/oval3" />
+
+    <TextView
+        android:id="@+id/prod_text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="128dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prod_oval1" />
+
+    <TextView
+        android:id="@+id/prod_text11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/tu"
+        android:textColor="#B3A3A3"
+        app:layout_constraintStart_toEndOf="@+id/prod_oval2"
+        app:layout_constraintTop_toBottomOf="@+id/prod_text7" />
+
+    <ImageView
+        android:id="@+id/prod_oval1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="112dp"
+        android:contentDescription="@string/oval_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/oval4" />
+
+    <TextView
+        android:id="@+id/prod_text12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/we"
+        android:textColor="#B3A3A3"
+        app:layout_constraintStart_toEndOf="@+id/prod_oval3"
+        app:layout_constraintTop_toBottomOf="@+id/prod_text8" />
+
+    <TextView
+        android:id="@+id/prod_text10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/mo"
+        android:textColor="#B3A3A3"
+        app:layout_constraintStart_toEndOf="@+id/prod_oval1"
+        app:layout_constraintTop_toBottomOf="@+id/prod_text6" />
+
+    <TextView
+        android:id="@+id/prod_text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginBottom="128dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/prod_oval2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="112dp"
+        android:contentDescription="@string/oval_grey1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prod_oval1"
+        app:srcCompat="@drawable/ovel2" />
+
+    <TextView
+        android:id="@+id/prod_text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="128dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prod_oval3" />
+
+    <ImageView
+        android:id="@+id/prod_oval4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/oval4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/oval" />
+
+    <TextView
+        android:id="@+id/prod_text13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/th"
+        android:textColor="#B3A3A3"
+        app:layout_constraintStart_toEndOf="@+id/prod_oval4"
+        app:layout_constraintTop_toBottomOf="@+id/prod_text9" />
+
+    <TextView
+        android:id="@+id/prod_text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/_18"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="144dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:endColor="#ECE4E4"
+        android:fadingEdge="none"
+        android:progress="50"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prod_time_spent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="144dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="44dp"
+        android:endColor="#ECE4E4"
+        android:fadingEdge="none"
+        android:progress="12"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prod_time_spent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

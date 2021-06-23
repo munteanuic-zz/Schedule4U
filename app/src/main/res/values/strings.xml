@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Schedule4U</string>
+    <string name="title_activity_to_dos">ToDos</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="title_activity_createTask">Create A Task</string>
+    <string name="title_activity_productivity">Productivity</string>
+    <string name="title_activity_recommendations">Recommendations</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="title_activity_deleted_items">DeletedItems</string>
+    <string name="general_meeting">Don\'t forget about your meeting in 5 minutes!</string>
+    <string name="delete_notification">Delete notification</string>
+    <string name="take_your_dog_for_a_walk">Take your dog for a walk!</string>
+    <string name="prod_score">Productivity Score</string>
+    <string name="time_spent">Time spent on tasks this week</string>
+    <string name="home">home</string>
+    <string name="about_me">about me</string>
+    <string name="time1">10hr 18min</string>
+    <string name="prod_text1">Finished Tasks: 5hr</string>
+    <string name="prod_text2">Tasks Still in Progress: 1hr</string>
+    <string name="prod_text3">Tasks for Leisure: 2hr 18min</string>
+    <string name="Schedule4UAboutMe">All About Schedule4U</string>
+    <string name="about_me_pages">About Me</string>
+    <string name="progress">progress</string>
+    <string name="_45_50_points">45/50 points</string>
+    <string name="this_week">this week</string>
+    <string name="oval_white">oval_white</string>
+    <string name="oval_grey1">oval_grey1</string>
+    <string name="oval3">oval3</string>
+    <string name="oval4">oval4</string>
+    <string name="_8">8</string>
+    <string name="_10">10</string>
+    <string name="_14">14</string>
+    <string name="_18">18</string>
+    <string name="mo">Mo</string>
+    <string name="tu">Tu</string>
+    <string name="we">We</string>
+    <string name="th">Th</string>
+    <string name="calendar_activity_name1">textView1</string>
+</resources>
