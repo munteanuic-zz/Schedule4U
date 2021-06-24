@@ -8,8 +8,9 @@ Ioana Munteanu, Clark Harty, Jin Kang, Angel Sylvester, Elise Tran, Yi Zhang
 
 ## Installation:
 1. Download [Android Studio](https://developer.android.com/studio/?gclid=CjwKCAjwt8uGBhBAEiwAayu_9fAAdUhRXSyf1HC41QUtCQ4v4s7LPFzwQb6jNWCzQPSXV-pHHPOoDxoCQs0QAvD_BwE&gclsrc=aw.ds).
-2. In Android Studio, select Pixel 2 API 30. 
-3. Press 'Run'.
+2. Open the project in Android Studio.
+3. Select Pixel 2 API 30. 
+4. Press 'Run'.
 
 ## Description:
  - Schedule4U is an app that helps students and young professionals manage their time.
