@@ -1,18 +1,18 @@
 # Shedule4U
 
-## Authors:
+## Authors
 Ioana Munteanu, Clark Harty, Jin Kang, Angel Sylvester, Elise Tran, Yi Zhang 
 
-## Demo:
+## Demo
 [Click here!](https://www.youtube.com/watch?v=1JplQVKDNwg)
 
-## Installation:
+## Installation
 1. Download [Android Studio](https://developer.android.com/studio/?gclid=CjwKCAjwt8uGBhBAEiwAayu_9fAAdUhRXSyf1HC41QUtCQ4v4s7LPFzwQb6jNWCzQPSXV-pHHPOoDxoCQs0QAvD_BwE&gclsrc=aw.ds).
 2. Open the project in Android Studio.
 3. Select Pixel 2 API 30. 
 4. Press 'Run'.
 
-## Description:
+## Description
  - Schedule4U is an app that helps students and young professionals manage their time.
  - A user study was conducted and it resulted in the following implications for design:
    - Avoiding  procrastination is important for productivity
@@ -29,3 +29,8 @@ Ioana Munteanu, Clark Harty, Jin Kang, Angel Sylvester, Elise Tran, Yi Zhang
    - **Productivity Score**: Each week, the maximum score a user can have is equal to the number of tasks scheduled. Each completed task gives the user one extra point.
    - Every page has an "About me" that lets the user know how they can use it.
  - The app was analyzed qualitatively and quantitatively using user testing. 
+
+## Prgramming Languages and Tools:
+- Java
+- Marvel
+- Android Studio
